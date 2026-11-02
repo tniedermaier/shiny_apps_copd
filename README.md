@@ -1,1 +1,6 @@
 # shiny_apps_copd
+
+This repository contains codes and data for R Shiny apps that were created by Tobias Niedermaier in the context of the PerMed-COPD project. This includes the following apps:
+- COPD_Markov_model: Originally based on the deterministic Markov model of Petra Menn, later implemented in R (Markov_model_Menn_Benchmark_Github.r) and simplified (Markov_model_simplified_Github_incl_checks.r) by Tobias Niedermaier. The simplified model was used for the translation into an R Shiny app. Almost all input parameters (except exacerbation mortality) can be changed using slider inputs. The modeling results are then updated automatically.
+- bootstrap_costs_qalys: A proof-of-concept Shiny app where two hypothetical interventions are compared with respect to cost-effectiveness. Effectiveness, costs, and corresponding standard deviations need to be provided as input values. The app then calculates the incremental cost-effectiveness ratio (ICER) and plots the results, including results of probabilistic sensitivity analyses such as cost-effectiveness acceptability curves (CEAC).
+- contour_plots: An app that creates "3-dimensional" contour plots for the association between FEV1, FVC, and a freely selectable third variable. The smoothing parameter for the contour plot can be modified.
